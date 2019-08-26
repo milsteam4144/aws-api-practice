@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{title}}</title>
+</head>
+<body>
+
+        <a href="/">Search for a Member</a> &nbsp; &nbsp; <a href="/delete">Delete a Member</a> &nbsp; &nbsp; <a href="/add">Add a Member</a> 
+<br>
+<br>
+
+<h1>{{result}}</h1>
+<br>
+<br>
+<form name="delete_member" id="delete_member" method="POST" action="/delete">
+        <div>
+            <input name="phone_number" type="tel"  id="phone_number" placeholder="Phone Number" value="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required/>
+        </div>
+        <button class="submitform">Submit</button>
+</form>
+
+
+</body>
+</html> 
